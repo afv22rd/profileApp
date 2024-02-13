@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "address": {
+        "type": "string"
+      },
+      "image": {
+        "type": "string",
+        "format": "uri"
+      },
+      "name": {
+        "type": "string"
+      },
+      "nationality": {
+        "type": "string"
+      },
+      "phone": {
+        "type": "string",
+        "pattern": "^[0-9]{10}$"
+      }
+    },
+    "required": ["address", "image", "name", "nationality", "phone"],
+    "additionalProperties": false
+  }
+}
